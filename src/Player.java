@@ -15,9 +15,11 @@ public class Player {
         } else if (isAudio) {
             musicPlayer.loadMusic(filePath);
         } else {
+            std.out.println("Unsupported file format. Only support wav, au, aiff and mid file.");
             return "Unsupported file format. Only support wav, au, aiff and mid file.";
         }
         fileName = new File(filePath).getName();
+        std.out.println("Success");
         return "Success";
     }
     public String getFilename(){

@@ -10,6 +10,7 @@ public class Win extends JFrame {
     Player plr = new Player();
     boolean loop = false;
     JLabel fname = new JLabel();
+
     ClickableJProgressBar jpr = new ClickableJProgressBar(new Interface() {
         @Override
         public void action(int v) {
